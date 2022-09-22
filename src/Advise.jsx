@@ -2,10 +2,10 @@ import PatternMobile from "./icons/PatternMobile";
 import PatternDesktop from "./icons/PatternDesktop";
 import Dice from "./icons/Dice";
 import { useGetAdviceQuery } from "./api/apiSlice";
-import Loading from "./Loading";
+// import Loading from "./Loading";
 
 function Advise() {
-  const { data: advice, refetch, isLoading } = useGetAdviceQuery();
+  const { data: advice, refetch } = useGetAdviceQuery();
 
   const handleClick = () => {
     refetch();
@@ -14,11 +14,6 @@ function Advise() {
     <>
       <div className="sm:flex justify-center items-center mt-16 px-6">
         <div className="h-96 w-96 rounded-lg bg-darkGrayishBlue p-7 lg:mt-24 lg:w-[32rem] lg:h-[20rem] relative">
-          {isLoading && (
-            <div className="lg:flex justify-center lg:ml-[-80rem]">
-              <Loading />
-            </div>
-          )}
           <p className="text-green text-center uppercase font-montserrat font-small tracking-widest mt-9">
             Advice #{advice?.slip?.id}
           </p>
