@@ -18,8 +18,8 @@ module.exports = {
       montserrat: ["Montserrat", "sans-serif"],
     },
     screens: {
-      sm: "375px",
       lg: "1024px",
+      sm: "375px",
       xs: "360px",
     },
     extend: {},
