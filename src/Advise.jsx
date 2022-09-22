@@ -25,7 +25,7 @@ function Advise() {
           <div className="lg:mt-8 lg:block sm:hidden xs:hidden">
             <PatternDesktop />
           </div>
-          <div className="sm:block sm:absolute sm:mt-20 lg:hidden xs:mt-20 xs:ml-[-1rem]">
+          <div className="sm:block sm:absolute sm:mt-20 lg:hidden xs:mt-14 xs:ml-[-1rem]">
             <PatternMobile />
           </div>
           <div
