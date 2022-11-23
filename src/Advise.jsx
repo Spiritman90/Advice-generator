@@ -1,6 +1,5 @@
 import Dice from "./icons/Dice";
 import { useGetAdviceQuery } from "./api/apiSlice";
-// import Loading from "./Loading";
 
 function Advise() {
   const { data: advice, refetch } = useGetAdviceQuery();
